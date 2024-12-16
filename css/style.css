@@ -1,0 +1,30 @@
+.version{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #1F4529;
+}
+.btn-version{
+    display: flex;
+    gap: 30px;
+}
+.version a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #FBF8EF;
+    cursor: pointer;
+    background-color: #525B44;
+    padding: 10px 16px;
+    border: 1px solid #525B44;
+    border-radius: 10px;
+}
+.version a:hover{
+    text-decoration: underline;
+}

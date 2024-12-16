@@ -1,0 +1,21 @@
+.invoice-title{
+    font-size: 60px;
+    text-align: center;
+}
+.invoice{
+    width: 400px;
+    margin: 0px auto;
+}
+.invoice .middle-invoice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.invoice .middle-invoice div label {
+    margin-right: 10px;
+}
+.invoice .middle-invoice div {
+    display: flex;
+    justify-content: space-between;
+}

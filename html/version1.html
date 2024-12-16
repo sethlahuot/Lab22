@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../css/style1.css"/>
+    </head>
+    <body>
+        <div class="whole">
+            <div class="middle-whole">
+                <div>
+                    <label>លេខសម្គាល់អតិថិជន</label>
+                    <input type="text" id="customerId" />
+                </div>
+                <div>
+                    <label>ឈ្មោះអតិថិជន</label>
+                    <input type="text" id="customerName" />
+                </div>
+                <div>
+                    <label>លេខអំណានចាស់</label>
+                    <input type="text" id="customerPreUse" />
+                </div>
+                <div>
+                    <label>លេខអំណានថ្មី</label>
+                    <input type="text" id="customerCurUse" />
+                </div>
+                <div>
+                    <div>
+                        <label>ថ្លៃសម្រាម</label>
+                        <input type="checkbox" id="cbTrash" onclick="disableTrashPrice()"/>
+                    </div>
+                    <select id="trashPrice" disabled>
+                        <option value="10000">10000</option>
+                        <option value="20000">20000</option>
+                        <option value="30000">30000</option>
+                    </select>
+                </div>
+                <button class="btncalculate" type="button" onclick="calculate()">គណនា</button>
+            </div>
+        </div>
+        <div id="invoice-display" class="invoice" style="display: none;">
+            <h1 class="invoice-title">វិក័យប័ត្រ</h1>
+            <div class="middle-invoice">
+                <div>
+                    <label>លេខសម្គាល់អតិថិជន</label>
+                    <div><span id="resCusId"></span></div>
+                </div>
+                <div>
+                    <label>ឈ្មោះអតិថិជន</label>
+                    <div><span id="resCusName"></span></div>
+                </div>
+                <div>
+                    <label>លេខអំណានចាស់</label>
+                    <div><span id="resCusPreUse"></span></div>
+                </div>
+                <div>
+                    <label>លេខអំណានថ្មី</label>
+                    <div><span id="resCusCurUse"></span></div>
+                </div>
+                <div>
+                    <label>ថ្លៃសម្រាម</label>
+                    <div><span id="resCusTrash"></span></div>
+                </div>
+                <div>
+                    <label>ការចំណាយសរុប</label>
+                    <div><span id="resCusTotal">៛</span></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../js/script1.js"></script>
+</body>
